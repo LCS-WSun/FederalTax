@@ -24,6 +24,7 @@
 		8213F9FC236C812F00D19E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8213F9FF236C812F00D19E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8213FA01236C812F00D19E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DCAC7E23707B57003253A5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				8213F9FC236C812F00D19E60 /* Assets.xcassets */,
 				8213F9FE236C812F00D19E60 /* LaunchScreen.storyboard */,
 				8213FA01236C812F00D19E60 /* Info.plist */,
+				82DCAC7E23707B57003253A5 /* MyPlayground.playground */,
 			);
 			path = FederalTax;
 			sourceTree = "<group>";
