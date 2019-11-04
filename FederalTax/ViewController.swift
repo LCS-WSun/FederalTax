@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     // MARK: Properties
         
-        // properties is where we keep variables
+        //Connected the view to my code
         
         @IBOutlet weak var EnterName: UITextField!
         
@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         
         @IBOutlet weak var errormessage: UILabel!
 
+    
     // MARK: initalizers
         
         //
@@ -32,13 +33,15 @@ class ViewController: UIViewController {
     // MARK: Methods (functions) - behaviors
         
         
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         
         func CalculateTax(_ sender: Any) {
+            
+            
+            //Guard statement to prevent bad user input
             
             guard let EnterNameString = EnterName.text else { return
                 
@@ -50,24 +53,31 @@ class ViewController: UIViewController {
                     return
                }
         
+                //Switch statements to calculate federal tax
+                //cases for different ranges of numbers
+                
                 switch AnnualIncome {
-                case 1: 0..47630:
+                case: 0...47630:
                     0.15 * AnnualIncome
                     
-                case 2: 47630..95,259
+                case: 47,631...95,259:
                 0.20.5 * AnnualIncome
                 
-                case 3: 52,408..95259
+                case: 95,260...147,667:
+                0.26 * AnnualIncome
+            
+                case: 144,668...210,371:
+                0.29 * AnnualIncome
                     
-                    
-                    
-                    
-                case 4:
-                    
-                    
-                    
-                default:
+                default: 0.33 * AnnualIncome
                     <#code#>
+                    
+                
+                
+        //Do later
+        // converting to functions, test run, rounding decimal places, converting to double, state name of user in text
+                    
+                    
                     
                     
                 
