@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     let Name  =
     //whatever the user name is
     
-    var AnnualIncome: Double =
+    var AnnualIncome = 47,630...210,371
     
     var effectiveTaxRate: Double =
     
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var ErrorMessage: UILabel!
-    //how do I connect my error messages into here?
+    //how do I connect my error messages into here? They just print.
     
     
     
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
     //a guard statement for - values?
     //Is my guard statement in the correct spot?
     // can express as a print but don't know how to put the error message in the text box instead?
-    
+    // don't know if I get the concept of guard concepts that much? Is the first thing the wrong input or the thing after  the = wrong?
     
     
     
@@ -171,6 +171,7 @@ class ViewController: UIViewController {
     
     //FederalTaxAmountOwning rounding to 2 decimal places
     // how to convert a double to a switch statement? don't know how to do?
+    // how to make code round?
     
     
     
@@ -179,6 +180,7 @@ class ViewController: UIViewController {
     
     //effective tax rate rounding to 1 decimal place
     // You would convert this into a double but how do you just make it round to one decimal point?
+    // how to make code round?
     
     
     
