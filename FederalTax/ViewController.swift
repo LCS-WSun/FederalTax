@@ -11,17 +11,25 @@ import UIKit
 class ViewController: UIViewController { 
     
     
+    //organizing things into different classes
+    
+    
     // MARK: Properties
     
-    //Connected the view to my code
+    //Connected the view to my code of outlets and actions
     
+   
     @IBOutlet weak var EnterName: UITextField!
     
     
     @IBOutlet weak var AnnualIncome: UITextField!
     
     
-    @IBOutlet weak var errormessage: UILabel!
+    @IBAction func CalculateTax(_ sender: Any)
+    
+    
+    @IBOutlet weak var ErrorMessage: UILabel!
+    
     
     
     // MARK: initalizers
@@ -46,18 +54,28 @@ class ViewController: UIViewController {
             //Enter Name guard statement
                 
                 
+                // enter annual income guard statement
                 guard let AnnualIncomeString = AnnualIncome.text else {
                     return
-            // enter annual income guard statement
+                print ("Enter a income plesase")
+                return
                     
                 }
+                
+                
+                
                 
                 guard let AnnualIncome = Double(AnnualIncomeString) else {
                     return
                 }
                 
-                //Switch statements to calculate federal tax
-                //cases for different ranges of numbers
+                
+                
+                
+                //Switch statement to calculate effective rax rate
+                //cases for different ranges of numbers of the annual income
+                // user can't have lower income than 47,630$
+                //Annual Income is unknown value which user will input to figure out tax for his or her's income
                 
                 
                switch AnnualIncome {
@@ -78,7 +96,7 @@ class ViewController: UIViewController {
                 (47,630 * 0.15) +
                 (AnnualIncome - 47,630) * 0.205 +
                 (AnnualIncome - 95,269) * 0.26 +
-                (AnnuaLIncome- 62,704) * 0.29
+                (AnnualIncome - 62,704) * 0.29
 
 
                default:
@@ -88,18 +106,24 @@ class ViewController: UIViewController {
                (AnnualIncome - 62,704) * 0.29 +
                (AnnualIncome - 210,371) * 0.33
                 
+               // number greater  $210,371 is going to be the default value
+               
+                
+                
+          
+                
+        
+        
+            
+                
+                
                }
                   
                 
-                //The effective tax rate calculation of the user
-                
-                switch effectiveTaxRate {
-                case
                     
                     
                     
-                    
-                    
+                 
                     
                     
                 }
@@ -108,7 +132,7 @@ class ViewController: UIViewController {
                 
                 
                 
-        // number greater  $210,371 is going to be the default value
+        
                     
     
                 
@@ -137,8 +161,9 @@ class ViewController: UIViewController {
                 
                 
                 // effective tax rate (total tax payable/income) as a percentage rounded to 1 decimal place
-                //create new switch statement?
+               
                 
+                //everything rounded to one decimal place? convert to inter value?
                 
                 
                 
@@ -165,4 +190,4 @@ class ViewController: UIViewController {
         
     }
     
-}
+

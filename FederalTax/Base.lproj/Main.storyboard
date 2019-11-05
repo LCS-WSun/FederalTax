@@ -86,11 +86,11 @@
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="CalculateTax:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78d-sp-Odg"/>
+                                    <action selector="CalculateTax:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIR-Tx-rUx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etd-lb-YIc">
-                                <rect key="frame" x="163" y="494" width="42" height="21"/>
+                                <rect key="frame" x="160" y="482" width="55" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -104,6 +104,7 @@
                     <connections>
                         <outlet property="AnnualIncome" destination="ov2-Fq-RKI" id="5hl-NR-dP7"/>
                         <outlet property="EnterName" destination="abU-bh-YBz" id="nsA-ZX-KJ5"/>
+                        <outlet property="ErrorMessage" destination="etd-lb-YIc" id="Mae-sO-bto"/>
                         <outlet property="errormessage" destination="etd-lb-YIc" id="GOW-Zb-C21"/>
                     </connections>
                 </viewController>
